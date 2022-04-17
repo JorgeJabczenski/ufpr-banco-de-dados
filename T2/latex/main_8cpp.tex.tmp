@@ -1,0 +1,56 @@
+\hypertarget{main_8cpp}{}\doxysection{main.\+cpp File Reference}
+\label{main_8cpp}\index{main.cpp@{main.cpp}}
+
+
+Arquivo principal com a solução do software.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$list$>$}\newline
+Include dependency graph for main.\+cpp\+:
+% FIG 0
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structinput__t}{input\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Estrutura para armazenar dados de uma entrada. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structcommand__t}{command\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{structtransaction__t}{transaction\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{structscheduling__t}{scheduling\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{structoutput__t}{output\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{main_8cpp_af957bb677ff0b1b6eb3e6f3c187b427c}\label{main_8cpp_af957bb677ff0b1b6eb3e6f3c187b427c}} 
+\mbox{\hyperlink{structinput__t}{input\+\_\+t}} {\bfseries parse\+\_\+string\+\_\+to\+\_\+input} (string line)
+\item 
+\mbox{\Hypertarget{main_8cpp_a79a65c0664e3f70597fa87c45719458f}\label{main_8cpp_a79a65c0664e3f70597fa87c45719458f}} 
+void {\bfseries print\+\_\+int\+\_\+list} (list$<$ int $>$ my\+\_\+list, bool jump\+\_\+line)
+\item 
+\mbox{\Hypertarget{main_8cpp_ae8145bb6b9589cdc291df671c9547066}\label{main_8cpp_ae8145bb6b9589cdc291df671c9547066}} 
+void {\bfseries print\+\_\+input} (\mbox{\hyperlink{structinput__t}{input\+\_\+t}} input)
+\item 
+\mbox{\Hypertarget{main_8cpp_aebf5c9c38001f823d3fd00ab1927bef2}\label{main_8cpp_aebf5c9c38001f823d3fd00ab1927bef2}} 
+void {\bfseries print\+\_\+output} (\mbox{\hyperlink{structoutput__t}{output\+\_\+t}} output)
+\item 
+\mbox{\Hypertarget{main_8cpp_ae4a9264fb967346f427437235b816240}\label{main_8cpp_ae4a9264fb967346f427437235b816240}} 
+list$<$ \mbox{\hyperlink{structinput__t}{input\+\_\+t}} $>$ {\bfseries read\+\_\+inputs} ()
+\item 
+\mbox{\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+int {\bfseries main} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Arquivo principal com a solução do software. 
+
+\begin{DoxyDate}{Date}
+13/04/2022 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+G\+R\+R20190372 -\/ Jorge Lucas Vicilli Jabczenski 
+\end{DoxyAuthor}
