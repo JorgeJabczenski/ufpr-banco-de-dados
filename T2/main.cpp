@@ -70,6 +70,8 @@ typedef struct
     list<transaction_t> transactions;
     list<input_t> inputs;
     transaction_t last_write;
+    bool serializable;
+    bool equivalent;
 } scheduling_t;
 
 /** @struct output_t
@@ -98,6 +100,10 @@ typedef struct
 /*              PARSES               */
 /*-----------------------------------*/
 
+/**
+ * @param string line
+ * @brief Função transforma uma string em uma input_t
+ */
 input_t parse_string_to_input(string line)
 {
     input_t in;
@@ -109,6 +115,10 @@ input_t parse_string_to_input(string line)
     return in;
 }
 
+/**
+ * @param list<input_t> input_list
+ * @brief Função transforma uma lista de input_t em uma lista de transações
+ */
 list<transaction_t> parse_to_transaction_list(list<input_t> input_list)
 {
     list<transaction_t> transaction_list;
@@ -208,6 +218,9 @@ void print_transaction(transaction_t t)
 /*              ------               */
 /*-----------------------------------*/
 
+/**
+ * @brief Função que lê todas as strings de entradas e devolve uma lista de input_t
+ */
 list<input_t> read_inputs()
 {
     list<input_t> input_list;
@@ -228,7 +241,6 @@ int main()
     // read all inputs
     list<input_t> input_list;
     input_list = read_inputs();
-
     #ifdef DEBUG
     for (input_t in : input_list)
         print_input(in);
@@ -237,9 +249,17 @@ int main()
     // parse inputs into transactions
     list<transaction_t> transactions_list;
     transactions_list = parse_to_transaction_list(input_list);
-
+    #ifdef DEBUG
     for (transaction_t t : transactions_list){
         print_transaction(t);
     }
+    #endif
 
+    // create schedulings list
+
+    // test if the scheds are serializable (via loops in graphs)
+
+    // test if the scheds are equivalent by vision
+
+    // print the output list
 }
